@@ -1,0 +1,44 @@
+.nav-bar-small{
+    display: none;
+}
+.nav-icon{
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+   transition: 0.15s;
+   align-items: center;
+   align-content: center;   
+   width: 80px;
+   border-radius: 4px;        
+}
+.nav-icon:active{
+   background-color: lightgray; 
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+   transition: 0.15s;
+   align-self: center;
+}
+.nav-bar{
+    display: grid;  
+    grid-template-rows: repeat(6, 1fr);
+    position: fixed;
+    z-index: 10; 
+    background-color: white; 
+    gap: 6px; 
+    width: 90px;        
+    padding: 8px; 
+    left: 0;                   
+    background-color:white; 
+    box-shadow: inset 1px 1px 2px lightgray;
+}
+.nav-bar img{
+    width: 30px;
+    margin: 0 auto;        
+}
+.nav-bar p{
+    font-size: 10px;
+}
+
+
+

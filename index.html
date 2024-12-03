@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page title</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/nav-bar.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+  <body>
+   <!-- header for wide screens -->
+   <div class="header">
+       <div class="logo-div">
+           <img src="icons/hamburger-menu.svg" id="hamburger-men">
+           <img src="icons/youtube-logo.svg" id="logo">           
+       </div>
+       <div class="input-div">
+           <input type="text" alt="search bar" placeholder="search" class="search-bar">
+           <button class="search-icon-btn">
+               <img src="icons/search.svg" class="search-icon"> 
+               <p class="tooltip search">search</p>
+           </button>
+           
+           <div class="voice-icon-div">
+               <img src="icons/voice-search-icon.svg" class="voice-icon">
+               <p class="tooltip voice-search">voice search</p>
+           </div>                   
+       </div>
+       <div class="right-div">
+           <div class="notif-icon">
+               <img src="icons/notifications.svg" class="not-icon">
+               <p class="tooltip">you have <span id="notification-el"></span> notifications</p>
+               <p id="notification-num-el" class="tooltip-notif-num">3</p>
+           </div>
+                     
+           <div class="create-icon">
+               <img src="icons/upload.svg" class="up-icon">
+               <p class="tooltip creat">create</p>
+           </div>
+           <!--   <img src="icons/youtube-apps.svg" class="app-icon">   --> 
+           <div class="you-icon-div">
+               <img src="Pics/channel-6.jpeg" class="you-icon">
+           </div>
+       </div>
+   </div>
+   <!-- header for narrow screens -->
+   <div class="header-small js-small-header-div">
+       <img src="icons/youtube-logo.svg" id="logo" class="js-small-header-div-img">
+  <!--wasn't as expected so had to remove it 
+        <input name="search-inputaaa-small-screen" type="text" class="search-input-small-screen js-search-input-small-screen" placeholder="search for video">
+    -->
+       <a href="search.html">
+         <button class="search-icon-btn js-search-icon-small-screen js-small-header-div-btn">
+        <img src="icons/search.svg" class="search-icon">
+        <p class="tooltip search">search</p>
+
+</button>
+       </a>  
+   </div>
+   <!-- side bar for wide screens -->
+   <div class="nav-bar">
+       <div class="nav-icon js-home-icon-wide-screen">
+           <img src="icons/home.svg">
+           <p>Home</p>
+       </div>
+       
+           <!--   <div class="nav-icon">
+           <img src="icons/youtube-music.svg">
+           <p>Youtube Music</p>
+       </div>  -->
+       <div class="nav-icon">
+           <img src="icons/subscriptions.svg">
+           <p>subscribtions</p>
+       </div>
+       <div class="nav-icon">
+           <img src="icons-2/short-white.jpg" bgcolor="transparent">
+           <p>Shorts</p>
+       </div>
+       <!--   <div class="nav-icon">
+           <img src="icons/explore.svg">
+           <p>Explore</p>
+       </div> -->
+       <div class="nav-icon">
+           <img src="icons/library.svg">
+           <p>Library</p>
+       </div>
+   </div>
+   <!-- navigating bar for small screens -->
+   <div class="nav-bar-small">
+       <div class="nav-icon js-home-icon-small-screen">
+           <img src="icons/home.svg">
+           <p>home</p>
+       </div>       
+       <div class="nav-icon">
+           <img src="icons/subscriptions.svg">
+           <p>subscriptions</p>
+       </div>
+       <div class="nav-icon">
+           <img src="icons-2/short-white.jpg">
+           <p>shorts</p>
+       </div>       
+       <div class="nav-icon" id="you-profile">
+           <img src="Pics/channel-6.jpeg" id="you-icon">           
+       </div>
+   </div>
+   <!-- the main container of the video grid -->
+   <div class="container js-video-container">
+     <!-- all of the videos that are supposed to be in this div are all generated with js -->
+   </div>
+   <script src="data/videos.js"></script>
+   <script src="script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,321 @@
+body{
+    padding-top: 50px;
+    padding-left: 98px;
+    
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) ;
+    gap:30px;
+    column-gap: 30px;
+    grid-row-gap: 60px;  
+    padding: 28px;    
+    background-color:#F2F2F2 ;                                   
+}
+.thumbnail-col{
+    margin-bottom: 20px;
+    position: relative;
+        
+            
+ 
+}
+.video-time-p,
+.video-time{
+        position: absolute;
+        bottom: 10px;
+        right: 16px;
+        background-color: black;
+        color: white;
+        font-family: roboto;
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 2px;
+        font-weight: 500;
+        
+    }
+    
+
+.video-info-col{
+    display: grid;
+    grid-template-columns: 16% 1fr;
+    gap:16px;                        
+}
+
+.video-info-col p{
+        margin: 0;
+        line-height: 20px;
+        margin-bottom: 10px;                
+}
+     
+.video-info-col img{
+        border-radius: 100%;  
+        width: 90%;              
+}
+    
+    
+.p.title{
+        font-weight: 500;
+} 
+.p.creator,
+.p.views{
+        font-size: 12px;
+        color: #4b4b4b;
+}
+.channel-pic-div{
+    display: flex;
+    align-self: center;  
+    position: relative;
+        
+}
+.channel-pic-div .tooltip-container{
+    position: absolute; 
+    display: grid; 
+    grid-template-columns: 30% 1fr;        
+    align-self: center;       
+    background-color: white;
+    font-size: 18px;    
+    border-radius: 6px;
+    padding: 16px;
+    top: 56px ;
+    gap:10px;
+    margin: 0 auto; 
+    opacity: 0;
+    pointer-events: none; 
+    width: 500%;
+                
+}
+.tooltip-container p{
+    line-height: 16px;    
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    
+}
+.tooltip-container .cr-name{
+    font-weight: bold;  
+    font-size: 14px; 
+    margin-bottom: 4px; 
+    margin-top: 10px;
+}
+.tooltip-container .ch-info{
+    font-size: 10px;
+    color: #5a5a5a;
+    
+}
+.channel-pic-div:hover .tooltip-container{
+    opacity: 1;
+    transition: 0.15s;
+}  
+
+
+@media(max-width: 767px){
+    body{
+        padding-left: 0;
+        padding-top: 40px;
+        padding-bottom: 50px;
+        
+    }
+    
+    
+    
+    .header{
+        display: none;
+    }
+    .header-small{
+        display: flex;
+        justify-content: space-between;        
+        padding: 0px 20px;
+        height: 46px;
+        transition: 0.15s;
+        
+    }
+    .search-icon-btn{
+        background-color: white; 
+        box-shadow: none;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px; 
+        transition: 0.15s;                         
+    }
+    .search-icon-btn:active{
+        background-color: lightgray; 
+        box-shadow: 0 0 2px gray;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;                      
+    } 
+    
+    .search-icon{
+        width: 26px;
+    }
+    #logo{
+        width: 84px;
+    }
+    .nav-bar{
+       display: none; 
+    }
+    
+    .nav-bar-small{
+        display: grid;  
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        position: fixed;
+        z-index: 10; 
+        gap: 10px;        
+        padding: 4px; 
+        padding-bottom: 14px;
+        left: 0;
+        bottom: 0px;
+        right: 0;  
+        background-color: white; 
+        height: 48px;                
+    }         
+     .nav-bar-small img{
+        width: 24px;
+        margin: 0 center;            
+    }
+     .nav-bar-small p{
+        font-size: 9px;
+    }
+    .nav-icon{
+        height: 40px;
+        padding: 8px;
+    }        
+    .nav-icon:active{
+        background-color: lightgray; 
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        transition: 0.15s;
+        align-self: center;
+    }
+    #you-profile{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        border: 2px solid #55ff97;
+    }
+    #you-icon{
+        width: 40px;
+        border-radius: 20px;
+        display: flex;
+        align-self: center; 
+         
+              
+    }
+    #you-icon:active{
+        width: 40px;
+        border-radius: 20px; 
+        display: flex;
+        align-self: center;       
+        
+    }
+                                  
+}
+
+@media(min-width: 667px){
+     .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+        gap:30px;
+        column-gap: 30px;
+        grid-row-gap: 60px;  
+        padding: 28px;    
+        background-color:#F2F2F2 ;                                   
+}
+    
+}
+
+
+
+@media(min-width: 992px){
+     .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) ;
+        gap:30px;
+        column-gap: 30px;
+        grid-row-gap: 60px;  
+        padding: 28px;    
+        background-color:#F2F2F2 ;                                   
+}
+    
+}
+
+
+
+
+
+@media(max-width: 404px){
+    body{
+        padding-left: 0;
+        padding-bottom: 50px;
+        padding-top: 40px;
+    }    
+    .header{
+        display: none;
+    }    
+    .header-small{
+        display: flex;
+        justify-content: space-between;       
+        padding: 0px 10px;
+        
+    }
+    .search-icon-btn{
+        background-color: white;        
+    }
+    .search-icon{
+        width: 26px;
+    }
+    #logo{
+        width: 84px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;        
+    }
+    .nav-bar-small{
+        display: flex;
+    }
+    
+    
+}
+
+
+
+@media(min-width: 1441px){
+    .container{
+       display: grid;
+       grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)) ;
+       gap:30px;
+       column-gap: 30px;
+       grid-row-gap: 60px;  
+       padding: 28px;    
+       background-color:#F2F2F2 ;                                   
+    }
+    .title{
+        font-size: 30px;
+        font-weight: bold;
+    } 
+    .creator,
+    .views{
+        font-size: 16px;
+        color: #4b4b4b;    
+       }                   
+}
+
+
+
+
+
+
+
+ 
+
